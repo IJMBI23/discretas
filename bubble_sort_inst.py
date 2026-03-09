@@ -53,4 +53,8 @@ print(foo(10))
     
     import matplotlib.pyplot as plt
     plt.figure(figsize=(5,6))
-
+    plt.title("Data fro bubble sort swaps")
+    plt.plot(N, SN,  labels = "$T_{es}(n)$")
+    plt.scatter(N, EN, colors = "black", marker = "x", labels = "$n()n-1$/2")
+plt.legend()
+plt.show()
