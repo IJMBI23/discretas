@@ -30,3 +30,8 @@ def bubble_sort_inst(a: list) -> list[int]:
 
 a = [666,665,664]
 print(bubble_sort_inst(a))
+
+for n in range(5,50,5):
+    a = list(range(n, -1, -1))
+    _, swaps = bubble_sort_ints(a)
+    print(len(a))
