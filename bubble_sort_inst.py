@@ -34,4 +34,5 @@ print(bubble_sort_inst(a))
 for n in range(5,50,5):
     a = list(range(n, -1, -1))
     _, swaps = bubble_sort_ints(a)
-    print(len(a))
+    la = print(len(a))
+    print(len(a), swaps, la*(la - 1) // 2)
