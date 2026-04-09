@@ -28,6 +28,9 @@ class Relation:
     def __len__(self):
         return len(self.pairs)
 
+    def neighbors(self, x):
+        return {b for (a, b) in self.pairs if a == x}
+
 
 R = Relation({"a", "b"}, pairs=[("a", "a"), ("a", "b"), ("b", "b")])
 
